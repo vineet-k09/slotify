@@ -1,0 +1,10 @@
+{
+  "name": "slotify",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "./gradlew bootRun",
+    "build": "./gradlew build",
+    "clean": "./gradlew clean"
+  }
+}
