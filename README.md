@@ -1,4 +1,4 @@
-# Cmd Line
+# Boot Appplication
 ## Run the application
 ```bash
 gradlew bootRun
@@ -55,3 +55,29 @@ This is PostgreSQL’s default isolation level.
 - Good baseline for booking systems
 
 ## Connection Pool (HikariCP)
+### A database connection is 
+- TCP connection
+- authenticated
+- stateful
+- expensive during creation
+**Can't really create a new one for each request**
+
+### Connection Pool
+- Open N connections ~ reuse them 
+
+### HikariCP = Fastest, simplest JDBC connection pool
+**Default for SpringBoot**
+```bash
+Pool: DataSourceConnectionProvider
+```
+Means: Default pool, no tuning yet.
+
+## Models
+Anything under ```src/main/resources``` is put on the classpath
+Flyway has a default location:
+```bash
+classpath:db/migration
+```
+### Resource Model
+### Slot Model 
+
