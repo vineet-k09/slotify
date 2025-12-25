@@ -1,4 +1,4 @@
-package com.slotify.slotify.domain;
+package com.slotify.domain;
 
 import jakarta.persistence.*;
 import java.time.LocalDateTime;

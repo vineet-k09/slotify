@@ -1,4 +1,4 @@
-package com.slotify.slotify.domain;
+package com.slotify.domain;
 
 public enum SlotStatus {
     AVAILABLE,

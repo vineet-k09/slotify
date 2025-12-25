@@ -80,4 +80,25 @@ classpath:db/migration
 ```
 ### Resource Model
 ### Slot Model 
+Slot generation 
+- Compute time windows
+- Insert slots
+- Skip duplicates safely
+- Never crash re-runs 
 
+# Execution Flow
+```bash
+HTTP request
+   ↓
+Controller method
+   ↓
+Service method
+   ↓
+Repository (proxy)
+   ↓
+Hibernate
+   ↓
+PostgreSQL
+   ↓
+back up the stack
+```
