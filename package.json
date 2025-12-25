@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "./gradlew bootRun",
-    "build": "./gradlew build",
-    "clean": "./gradlew clean"
+    "dev": "gradlew bootRun",
+    "build": "gradlew build",
+    "clean": "gradlew clean",
+    "clean:build": "gradlew clean build",
+    "refresh": "gradlew build --refresh-dependencies",
+    "start":"java -jar build/libs/slotify-*.jar",
+    "stop": "gradlew --stop"
   }
 }

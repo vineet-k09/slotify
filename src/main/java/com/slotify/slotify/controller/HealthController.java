@@ -9,4 +9,9 @@ public class HealthController {
     public String health() {
         return "Slotify backend alive on JAVA 22";
     }
+
+    @GetMapping("/health2")
+    public String health2() {
+        return "Slotify backend alive on Java 22";
+    }
 }

@@ -9,4 +9,3 @@ public class SlotifyApplication {
         SpringApplication.run(SlotifyApplication.class, args);
     }
 }
-
